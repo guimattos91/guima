@@ -13,11 +13,9 @@ const Footer: React.FC = () => {
             <SectionStyled>
               <p className="d-flex align-items-center">
                 Site criado por: &nbsp;
-                <nav>
-                  <LinkStyled href="https://www.linkedin.com/in/guimattos91/">
-                    Guilherme Mattos
-                  </LinkStyled>
-                </nav>
+                <LinkStyled href="https://www.linkedin.com/in/guimattos91/">
+                  Guilherme Mattos
+                </LinkStyled>
               </p>
             </SectionStyled>
           </Col>
