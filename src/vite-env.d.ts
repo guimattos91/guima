@@ -2,6 +2,7 @@
 
 interface ImportMetaEnv {
   readonly VITE_APP_NAME?: string
+  readonly VITE_APP_FORM?: string
   readonly VITE_I18N_DEBBUG?: 'true' | 'false'
   readonly PACKAGE_VERSION: string
   // add more env variables here...

@@ -2,7 +2,6 @@ import React, { Suspense } from 'react'
 
 import ReactDOM from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css'
-
 import 'services/i18n'
 
 import GlobalStyles from 'styles/GlobalStyles'
