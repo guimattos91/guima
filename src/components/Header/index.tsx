@@ -4,32 +4,50 @@ import { Col, Container, Row } from 'react-bootstrap'
 
 import LogoBranca from '../../assets/Logo/logo-branca.png'
 import LogoBrancaMobile from '../../assets/Logo/logo-mobile-branca.png'
-import { LinkStyleds } from '../../styles/GlobalStyles/index'
-import { H1Styled, ImgStyled, ImgStyledSmall, SectionStyled } from './style'
+import {
+  ImgStyled,
+  ImgStyledSmall,
+  NavStyled,
+  SectionStyled,
+  SectionStyledSmall,
+} from './style'
 
 const Header: React.FC = () => {
   return (
     <header>
       <Container>
         <Row className="d-flex align-items-center justify-content-between">
-          <Col xs={12} md={6}>
-            <H1Styled>
-              <ImgStyled src={LogoBranca} alt="logo" />
-              <ImgStyledSmall src={LogoBrancaMobile} alt="logo" />
-            </H1Styled>
+          <Col xs={6} md={6}>
+            <ImgStyled src={LogoBranca} alt="logo" className="my-3" />
+            <ImgStyledSmall
+              src={LogoBrancaMobile}
+              alt="logo"
+              className="my-3"
+            />
           </Col>
-          <Col xs={12} md={6}>
+          <Col xs={6} md={6}>
             <SectionStyled>
-              <nav className="d-flex align-items-center">
-                <LinkStyleds
-                  linkcolor="white"
-                  to="/characters"
-                  className="px-3"
-                >
-                  Portfólio
-                </LinkStyleds>
-              </nav>
+              <NavStyled>
+                <a href="#clientes" className="px-3">
+                  Nossos Clientes
+                </a>
+                <a href="#trabalho" className="px-3">
+                  Nossos Trabalhos
+                </a>
+                <a href="#contato" className="px-3">
+                  Contato
+                </a>
+              </NavStyled>
             </SectionStyled>
+            <SectionStyledSmall>
+              <nav className="d-flex align-items-center">
+                <button className="hamburger hamburger--squeeze" type="button">
+                  <span className="hamburger-box">
+                    <span className="hamburger-inner" />
+                  </span>
+                </button>
+              </nav>
+            </SectionStyledSmall>
           </Col>
         </Row>
       </Container>
