@@ -6,25 +6,28 @@ export const HeaderDiv = styled.header`
   box-shadow: rgb(0 0 0 / 10%) 0px 3px 5px;
   color: rgb(158, 158, 158);
 `
-
 export const SpanTitle = styled.span`
   color: #02acd9;
 `
-
-export const H2Styled = styled.h2`
+export const H1Styled = styled.h1`
   display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   color: white;
   font-weight: 700;
-  text-align: center;
-`
 
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+`
 export const SectionStyled = styled.section`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 40vh;
+  width: 100%;
 `
 export const LinkStyled = styled(Link)`
   text-decoration: none;

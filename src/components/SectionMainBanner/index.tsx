@@ -1,15 +1,16 @@
 import React, { memo, useEffect } from 'react'
 
+import { Col, Container, Row } from 'react-bootstrap'
 import Typed from 'typed.js'
 
-import { H2Styled, SectionStyled, SpanTitle } from './style'
+import { H1Styled, SectionStyled, SpanTitle } from './style'
 
 const SectionMainBanner: React.FC = () => {
   const el = React.useRef(null)
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['<i>Desenvolver</i>', '<i>Social Media</i>'],
+      strings: ['Desenvolvimento', 'Mídias Sociais', 'Design', 'Marketing'],
       typeSpeed: 50,
       loop: true,
     })
@@ -20,10 +21,18 @@ const SectionMainBanner: React.FC = () => {
 
   return (
     <SectionStyled>
-      <H2Styled>
-        Vamos nessa &nbsp;
-        <SpanTitle ref={el} />
-      </H2Styled>
+      <Container>
+        <Row>
+          <Col xs={12} md={6}>
+            <H1Styled>
+              Olá! Somos a Guima, especialistas em&nbsp;
+              <div>
+                <SpanTitle ref={el} />
+              </div>
+            </H1Styled>
+          </Col>
+        </Row>
+      </Container>
     </SectionStyled>
   )
 }
