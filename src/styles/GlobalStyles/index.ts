@@ -11,15 +11,11 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
-    :root {
-        font-size: 62.5%;
-    }
+
     html, body, #root {
         min-height: 100vh;
     }
     body {
-        font-size: 1.6rem;
-        font-weight: 400;
         background-color: #1d1d1d;
         font-family: 'Montserrat', sans-serif;
     }
@@ -47,7 +43,7 @@ export const TextBlack = styled.p`
   color: #1d1d1d;
 `
 
-export const LinkStyleds = styled(Link)<ILinkProps>`
+export const LinkStyled = styled(Link)<ILinkProps>`
   text-decoration: none;
   font-style: normal;
   color: ${(props) => props.linkcolor};
