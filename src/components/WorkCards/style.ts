@@ -10,9 +10,13 @@ export const DivCard = styled.div`
   -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.46);
   -moz-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.46);
   box-shadow: 0px 0px 10px -5px rgba(2, 172, 217, 0.46);
+  margin-bottom: 2rem;
 
   p {
     color: white;
+  }
+  @media (max-width: 576px) {
+    margin-bottom: 2rem;
   }
 `
 export const H3Styled = styled.h3`

@@ -15,6 +15,18 @@ export const H2Styled = styled.h2<IH2StyledProps>`
   font-weight: 600;
   font-size: 24pt;
   text-align: center;
+
+  ::after {
+    background-color: #02acd9;
+    content: '';
+    display: block;
+    height: 5px;
+    position: absolute;
+    width: 50%;
+    align-content: center;
+    margin-top: 0.2rem;
+    color: #02acd9;
+  }
 `
 export const DivStyled = styled.div`
   display: flex;

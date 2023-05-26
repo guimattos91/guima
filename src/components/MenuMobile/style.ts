@@ -27,35 +27,12 @@ export const H1Styled = styled.h1`
 `
 export const SectionStyled = styled.section`
   display: flex;
-  justify-content: flex-end;
-  color: white;
-
-  @media (max-width: 767px) {
-    display: none;
-    text-align: center;
-    justify-content: center;
-    padding-bottom: 2rem;
-  }
-`
-export const MenuMobile = styled.section`
-  display: flex;
   justify-content: center;
   color: white;
   background-color: #1d1d1d;
   width: 100vw;
-  height: 30vh;
+  height: 100vh;
   z-index: 100;
-  transition: height 2s ease;
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-    a {
-      padding: 1rem 0;
-    }
-  }
 `
 export const SectionStyledSmall = styled.section`
   display: none;
@@ -70,7 +47,7 @@ export const SectionStyledSmall = styled.section`
 `
 export const NavStyled = styled.nav`
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   color: white;
   align-items: center;
   a {

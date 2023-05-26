@@ -39,6 +39,7 @@ const SectionForms: React.FC = () => {
             id="message"
             name="message"
             placeholder="Sua mensagem"
+            required
           />
           <ButtonStyled type="submit">Enviar</ButtonStyled>
         </FormStyled>

@@ -1,4 +1,4 @@
-import { memo } from 'react'
+import { memo, useCallback, useState } from 'react'
 
 import { Col, Container, Row } from 'react-bootstrap'
 
@@ -10,9 +10,18 @@ import {
   NavStyled,
   SectionStyled,
   SectionStyledSmall,
+  MenuMobile,
+  ButtonStyled,
 } from './style'
 
 const Header: React.FC = () => {
+  const [isActive, setIsActive] = useState(false)
+  // const [menuActivate, setMenuActivate] = useState(false)
+
+  const handleClick = useCallback(() => {
+    setIsActive(!isActive)
+  }, [isActive])
+
   return (
     <header>
       <Container>
@@ -40,17 +49,46 @@ const Header: React.FC = () => {
               </NavStyled>
             </SectionStyled>
             <SectionStyledSmall>
-              <nav className="d-flex align-items-center">
-                <button className="hamburger hamburger--squeeze" type="button">
-                  <span className="hamburger-box">
-                    <span className="hamburger-inner" />
-                  </span>
-                </button>
-              </nav>
+              <ButtonStyled
+                className={`hamburger--squeeze ${isActive ? 'is-active' : ''}`}
+                type="button"
+                onClick={handleClick}
+              >
+                <span className="hamburger-box">
+                  <span className="hamburger-inner" />
+                </span>
+              </ButtonStyled>
             </SectionStyledSmall>
           </Col>
         </Row>
       </Container>
+      {isActive && (
+        <MenuMobile>
+          <nav>
+            <a
+              href="#clientes"
+              className="px-3"
+              onClick={() => setIsActive(false)}
+            >
+              Nossos Clientes
+            </a>
+            <a
+              href="#trabalho"
+              className="px-3"
+              onClick={() => setIsActive(false)}
+            >
+              Nossos Trabalhos
+            </a>
+            <a
+              href="#contato"
+              className="px-3"
+              onClick={() => setIsActive(false)}
+            >
+              Contato
+            </a>
+          </nav>
+        </MenuMobile>
+      )}
     </header>
   )
 }

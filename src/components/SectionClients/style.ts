@@ -1,3 +1,4 @@
+import { Row } from 'react-bootstrap'
 import styled from 'styled-components'
 
 export const SectionStyled = styled.section`
@@ -13,12 +14,17 @@ export const DivBackground = styled.div`
   justify-content: center;
   width: 100%;
   align-items: center;
-  min-height: 10vh;
   background-color: rgb(32, 35, 41);
+  padding: 2rem 0;
 `
 export const ImageStyled = styled.img`
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: grayscale(100%);
+  max-height: 70px;
+  /* filter: grayscale(100%); */
+`
+export const RowStyled = styled(Row)`
+  display: flex;
+  justify-content: space-around;
 `

@@ -13,21 +13,27 @@ const SectionWorks: React.FC = () => {
       <H2Title title="O que fazemos?" color="white" />
       <Container>
         <Row>
-          <Col>
+          <Col xs={12} sm={6}>
             <WorkCards
-              title="Falalala"
+              title="Social Media"
               description="Uma frase muito muito curta."
             />
           </Col>
-          <Col>
+          <Col xs={12} sm={6}>
             <WorkCards
-              title="Falalala"
+              title="Branding"
               description="Uma frase muito muito curta."
             />
           </Col>
-          <Col>
+          <Col xs={12} sm={6}>
             <WorkCards
-              title="Falalala"
+              title="Facebook Ads"
+              description="Uma frase muito muito curta."
+            />
+          </Col>
+          <Col xs={12} sm={6}>
+            <WorkCards
+              title="Design"
               description="Uma frase muito muito curta."
             />
           </Col>
