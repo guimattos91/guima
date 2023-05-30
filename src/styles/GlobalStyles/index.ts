@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
 import styled, { createGlobalStyle } from 'styled-components'
 
-interface ILinkProps {
+interface ILinkAProps {
   linkcolor: string
+  linkhovercolor: string
 }
 
 export default createGlobalStyle`
@@ -43,12 +43,14 @@ export const TextBlack = styled.p`
   color: #1d1d1d;
 `
 
-export const LinkStyled = styled(Link)<ILinkProps>`
+export const AStyled = styled.a<ILinkAProps>`
   text-decoration: none;
   font-style: normal;
+  font-weight: 600;
   color: ${(props) => props.linkcolor};
 
   &:hover {
-    color: rgb(255, 152, 0);
+    color: ${(props) => props.linkhovercolor};
+    text-decoration: underline;
   }
 `

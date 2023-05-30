@@ -1,9 +1,11 @@
 import styled from 'styled-components'
 
-export const HeaderDiv = styled.header`
-  background-color: rgb(32, 35, 41);
-  box-shadow: rgb(0 0 0 / 10%) 0px 3px 5px;
-  color: rgb(158, 158, 158);
+interface IHeaderProps {
+  bgColor: boolean
+}
+
+export const HeaderDiv = styled.header<IHeaderProps>`
+  background-color: ${({ bgColor }) => (bgColor ? '#1d1d1d' : 'none')};
 `
 export const ImgStyled = styled.img`
   max-height: 50px;
@@ -23,7 +25,6 @@ export const ImgStyledSmall = styled.img`
 `
 export const H1Styled = styled.h1`
   display: flex;
-  padding: 1rem 0;
 `
 export const SectionStyled = styled.section`
   display: flex;
@@ -37,13 +38,14 @@ export const SectionStyled = styled.section`
     padding-bottom: 2rem;
   }
 `
-export const MenuMobile = styled.section`
+export const MenuMobile = styled.div`
   display: flex;
   justify-content: center;
   color: white;
   background-color: #1d1d1d;
   width: 100vw;
-  height: 30vh;
+  height: 100vh;
+  position: absolute;
   z-index: 100;
   transition: height 2s ease;
   nav {
@@ -73,9 +75,6 @@ export const NavStyled = styled.nav`
   justify-content: flex-end;
   color: white;
   align-items: center;
-  a {
-    text-decoration: none;
-  }
 `
 
 export const ButtonStyled = styled.button`

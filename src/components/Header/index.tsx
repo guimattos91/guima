@@ -2,6 +2,8 @@ import { memo, useCallback, useState } from 'react'
 
 import { Col, Container, Row } from 'react-bootstrap'
 
+import { AStyled } from 'styles/GlobalStyles'
+
 import LogoBranca from '../../assets/Logo/logo-branca.png'
 import LogoBrancaMobile from '../../assets/Logo/logo-mobile-branca.png'
 import {
@@ -12,40 +14,61 @@ import {
   SectionStyledSmall,
   MenuMobile,
   ButtonStyled,
+  H1Styled,
+  HeaderDiv,
 } from './style'
 
 const Header: React.FC = () => {
   const [isActive, setIsActive] = useState(false)
+  const [bgColorDiv, setBgColorDiv] = useState(false)
   // const [menuActivate, setMenuActivate] = useState(false)
 
   const handleClick = useCallback(() => {
     setIsActive(!isActive)
-  }, [isActive])
+    setBgColorDiv(!bgColorDiv)
+  }, [isActive, bgColorDiv])
 
   return (
-    <header>
+    <HeaderDiv bgColor={bgColorDiv}>
       <Container>
         <Row className="d-flex align-items-center justify-content-between">
           <Col xs={6} md={6}>
-            <ImgStyled src={LogoBranca} alt="logo" className="my-3" />
-            <ImgStyledSmall
-              src={LogoBrancaMobile}
-              alt="logo"
-              className="my-3"
-            />
+            <H1Styled>
+              <ImgStyled src={LogoBranca} alt="logo" className="my-3" />
+              <ImgStyledSmall
+                src={LogoBrancaMobile}
+                alt="logo"
+                className="my-3"
+              />
+            </H1Styled>
           </Col>
           <Col xs={6} md={6}>
             <SectionStyled>
               <NavStyled>
-                <a href="#clientes" className="px-3">
+                <AStyled
+                  linkcolor="white"
+                  linkhovercolor="#02acd9"
+                  href="#clientes"
+                  className="px-3"
+                >
                   Nossos Clientes
-                </a>
-                <a href="#trabalho" className="px-3">
+                </AStyled>
+                <AStyled
+                  linkcolor="white"
+                  linkhovercolor="#02acd9"
+                  href="#clientes"
+                  className="px-3"
+                >
                   Nossos Trabalhos
-                </a>
-                <a href="#contato" className="px-3">
+                </AStyled>
+                <AStyled
+                  linkcolor="white"
+                  linkhovercolor="#02acd9"
+                  href="#clientes"
+                  className="px-3"
+                >
                   Contato
-                </a>
+                </AStyled>
               </NavStyled>
             </SectionStyled>
             <SectionStyledSmall>
@@ -68,28 +91,37 @@ const Header: React.FC = () => {
             <a
               href="#clientes"
               className="px-3"
-              onClick={() => setIsActive(false)}
+              onClick={() => {
+                setIsActive(false)
+                setBgColorDiv(false)
+              }}
             >
               Nossos Clientes
             </a>
             <a
               href="#trabalho"
               className="px-3"
-              onClick={() => setIsActive(false)}
+              onClick={() => {
+                setIsActive(false)
+                setBgColorDiv(false)
+              }}
             >
               Nossos Trabalhos
             </a>
             <a
               href="#contato"
               className="px-3"
-              onClick={() => setIsActive(false)}
+              onClick={() => {
+                setIsActive(false)
+                setBgColorDiv(false)
+              }}
             >
               Contato
             </a>
           </nav>
         </MenuMobile>
       )}
-    </header>
+    </HeaderDiv>
   )
 }
 

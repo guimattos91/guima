@@ -1,21 +1,17 @@
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-export const HeaderDiv = styled.header`
-  background-color: rgb(32, 35, 41);
-  box-shadow: rgb(0 0 0 / 10%) 0px 3px 5px;
-  color: rgb(158, 158, 158);
-`
 export const SpanTitle = styled.span`
   color: #02acd9;
+  font-weight: 900;
+  width: 100%;
 `
-export const H1Styled = styled.h1`
+export const H2Styled = styled.h2`
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0;
   color: white;
-  font-weight: 700;
+  font-size: 1.5em;
 
   @media (max-width: 767px) {
     text-align: center;
@@ -23,26 +19,29 @@ export const H1Styled = styled.h1`
 `
 export const SectionStyled = styled.section`
   display: flex;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 40vh;
+  margin-bottom: 7rem;
+`
+export const VideoBanner = styled.video`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80%;
+  object-fit: cover;
   width: 100%;
+  z-index: -5;
 `
-export const LinkStyled = styled(Link)`
-  text-decoration: none;
-  font-style: normal;
-  color: rgb(158, 158, 158);
-  font-weight: 700;
+export const DivTitle = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
 
-  &:hover {
-    color: rgb(255, 152, 0);
-  }
-`
-export const ButtonStyled = styled.button`
-  background: none;
-  border: none;
-  color: white;
-  box-shadow: 0 0 0 0;
-  outline: 0;
+  /* z-index: -5; */
 `
