@@ -49,7 +49,7 @@ const Header: React.FC = () => {
                   linkcolor="white"
                   linkhovercolor="#02acd9"
                   href="#clientes"
-                  className="px-3"
+                  className="me-3"
                 >
                   Nossos Clientes
                 </AStyled>
@@ -57,7 +57,7 @@ const Header: React.FC = () => {
                   linkcolor="white"
                   linkhovercolor="#02acd9"
                   href="#clientes"
-                  className="px-3"
+                  className="me-3"
                 >
                   Nossos Trabalhos
                 </AStyled>
@@ -65,7 +65,6 @@ const Header: React.FC = () => {
                   linkcolor="white"
                   linkhovercolor="#02acd9"
                   href="#clientes"
-                  className="px-3"
                 >
                   Contato
                 </AStyled>

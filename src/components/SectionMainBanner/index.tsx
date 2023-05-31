@@ -11,7 +11,7 @@ const SectionMainBanner: React.FC = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['Desenvolvimento', 'Mídias Sociais', 'Design', 'Marketing'],
+      strings: ['Site', 'Mídias Sociais', 'Design', 'Marketing', 'Branding'],
       typeSpeed: 50,
       loop: true,
     })

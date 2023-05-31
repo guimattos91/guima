@@ -48,9 +48,10 @@ export const AStyled = styled.a<ILinkAProps>`
   font-style: normal;
   font-weight: 600;
   color: ${(props) => props.linkcolor};
-
   &:hover {
     color: ${(props) => props.linkhovercolor};
-    text-decoration: underline;
+    padding-bottom: 5px;
+    border-bottom: 4px solid;
+    transition: 0.4s;
   }
 `

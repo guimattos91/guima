@@ -4,6 +4,7 @@ export const SpanTitle = styled.span`
   color: #02acd9;
   font-weight: 900;
   width: 100%;
+  font-size: 2rem;
 `
 export const H2Styled = styled.h2`
   display: flex;
