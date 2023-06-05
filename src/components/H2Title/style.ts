@@ -33,7 +33,7 @@ export const DivStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   :after {
     background-color: #02acd9;

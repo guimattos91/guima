@@ -1,10 +1,13 @@
 import styled from 'styled-components'
 
-export const SpanTitle = styled.span`
-  color: #02acd9;
-  font-weight: 900;
+export const DivTitle = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  font-size: 2rem;
+  height: 60vh;
+
+  /* z-index: -5; */
 `
 export const H2Styled = styled.h2`
   display: flex;
@@ -26,7 +29,13 @@ export const SectionStyled = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 7rem;
+  margin-bottom: 10rem;
+`
+export const SpanTitle = styled.span`
+  color: #02acd9;
+  font-weight: 900;
+  width: 100%;
+  font-size: 2rem;
 `
 export const VideoBanner = styled.video`
   position: absolute;
@@ -36,13 +45,4 @@ export const VideoBanner = styled.video`
   object-fit: cover;
   width: 100%;
   z-index: -5;
-`
-export const DivTitle = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60vh;
-
-  /* z-index: -5; */
 `

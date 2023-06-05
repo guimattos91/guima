@@ -32,7 +32,7 @@ const Header: React.FC = () => {
     <HeaderDiv bgColor={bgColorDiv}>
       <Container>
         <Row className="d-flex align-items-center justify-content-between">
-          <Col xs={6} md={6}>
+          <Col xs={6}>
             <H1Styled>
               <ImgStyled src={LogoBranca} alt="logo" className="my-3" />
               <ImgStyledSmall
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
               />
             </H1Styled>
           </Col>
-          <Col xs={6} md={6}>
+          <Col xs={6}>
             <SectionStyled>
               <NavStyled>
                 <AStyled

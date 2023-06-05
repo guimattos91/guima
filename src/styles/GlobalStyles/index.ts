@@ -14,6 +14,7 @@ export default createGlobalStyle`
 
     html, body, #root {
         min-height: 100vh;
+        --primary:#1d1d1d;
     }
     body {
         background-color: #1d1d1d;
