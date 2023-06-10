@@ -68,6 +68,7 @@ export const SectionStyledSmall = styled.section`
     display: flex;
     text-align: center;
     justify-content: flex-end;
+    align-items: center;
   }
 `
 export const NavStyled = styled.nav`

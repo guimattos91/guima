@@ -194,6 +194,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     display: flex;
     text-align: center;
     justify-content: flex-end;
+    align-items: center;
   }
 `,J0=b.nav`
   display: flex;
