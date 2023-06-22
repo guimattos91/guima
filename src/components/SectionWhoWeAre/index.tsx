@@ -9,7 +9,7 @@ import { DivBackground, SectionStyled } from './style'
 const SectionWhoWeAre: React.FC = () => {
   return (
     <SectionStyled id="quem-somos-nos">
-      <H2Title title="Quem Somos" color="white" />
+      <H2Title title="Quem Somos" />
       <DivBackground>
         <Container>
           <Row>

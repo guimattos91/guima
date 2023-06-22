@@ -1,10 +1,9 @@
-export const Theme = {
-  name: 'light',
-
+export const darkTheme = {
+  name: 'dark',
   color: {
     primary: {
-      mainText: '#1d1d1d',
-      contrastText: '#02acd9',
+      mainText: '#ffffff',
+      contrastText: '#c1d9d0',
     },
     secundary: {
       main: '#736681',
@@ -15,14 +14,14 @@ export const Theme = {
   // Cores para texto
   colorText: {
     black: '#000000',
-    contrastText: '#fff',
+    contrastText: '#1d1d1d',
     lightBlue: '#02acd9',
-    mainText: '#1d1d1d',
+    mainText: '#ffffff',
   },
 
   // Cores para Background
   background: {
-    color: '#ffffff',
+    color: '#1d1d1d',
     lightBlue: '#02acd9',
   },
 

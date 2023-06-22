@@ -12,7 +12,8 @@ import { DivBackground, ImageStyled, SectionStyled } from './style'
 const SectionClients: React.FC = () => {
   return (
     <SectionStyled id="clientes">
-      <H2Title title="Nossos Clientes" color="white" />
+      <H2Title title="Nossos Clientes" />
+
       <DivBackground>
         <Container>
           <Row>

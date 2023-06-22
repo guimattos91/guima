@@ -6,7 +6,6 @@ export const SectionStyled = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 10vh;
   margin-bottom: 2rem;
 `
 export const DivBackground = styled.div`
@@ -22,7 +21,6 @@ export const ImageStyled = styled.img`
   justify-content: center;
   align-items: center;
   max-height: 70px;
-  /* filter: grayscale(100%); */
 `
 export const RowStyled = styled(Row)`
   display: flex;

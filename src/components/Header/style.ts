@@ -1,11 +1,16 @@
 import styled from 'styled-components'
 
+interface ILinkAProps {
+  linkcolor: string
+  linkhovercolor: string
+}
+
 interface IHeaderProps {
-  bgColor: boolean
+  bgcolor: string
 }
 
 export const HeaderDiv = styled.header<IHeaderProps>`
-  background-color: ${({ bgColor }) => (bgColor ? '#1d1d1d' : 'none')};
+  background-color: ${(props) => props.bgcolor};
 `
 export const ImgStyled = styled.img`
   max-height: 50px;
@@ -25,10 +30,12 @@ export const ImgStyledSmall = styled.img`
 `
 export const H1Styled = styled.h1`
   display: flex;
+  margin: 0;
 `
 export const SectionStyled = styled.section`
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   color: white;
 
   @media (max-width: 767px) {
@@ -62,6 +69,7 @@ export const MenuMobile = styled.div`
 export const SectionStyledSmall = styled.section`
   display: none;
   justify-content: flex-end;
+  align-items: center;
   color: white;
 
   @media (max-width: 767px) {
@@ -77,11 +85,28 @@ export const NavStyled = styled.nav`
   color: white;
   align-items: center;
 `
-
 export const ButtonStyled = styled.button`
   background: none;
   border: none;
   color: white;
   box-shadow: 0 0 0 0;
   outline: 0;
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`
+
+export const AStyled = styled.a<ILinkAProps>`
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  color: ${(props) => props.linkcolor};
+  &:hover {
+    color: ${(props) => props.linkhovercolor};
+    padding-bottom: 5px;
+    border-bottom: 4px solid;
+    transition: 0.4s;
+  }
 `

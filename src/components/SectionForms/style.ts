@@ -5,7 +5,6 @@ export const SectionStyled = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 10vh;
   ::-webkit-input-placeholder {
     color: white;
   }
@@ -37,8 +36,9 @@ export const InputStyled = styled.input`
   padding: 0 1rem 0 1rem;
   border-style: solid;
   margin-bottom: 2rem;
-  width: 50%;
-  @media (max-width: 425px) {
+  margin-top: 0.75rem;
+  width: 30%;
+  @media (max-width: 767px) {
     width: 80%;
   }
 `
@@ -52,10 +52,10 @@ export const TextareaStyled = styled.textarea`
   border: 2px;
   border-style: solid;
   margin-bottom: 2rem;
-  margin-top: 0.4rem;
-  width: 50%;
-  min-height: 100px;
-  @media (max-width: 425px) {
+  margin-top: 0.75rem;
+  width: 30%;
+  min-height: 150px;
+  @media (max-width: 767px) {
     width: 80%;
   }
 `

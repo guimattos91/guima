@@ -16,8 +16,8 @@ import {
 const SectionForms: React.FC = () => {
   return (
     <SectionStyled id="contato">
-      <DivBackground className="py-4">
-        <H2Title title="Quer Falar Conosco?" color="white" />
+      <DivBackground className="py-5">
+        <H2Title title="Quer Falar Conosco?" />
 
         <FormStyled action={Config.app.form} method="POST">
           <InputStyled
@@ -25,7 +25,7 @@ const SectionForms: React.FC = () => {
             name="nome"
             id="nome"
             placeholder="Seu nome"
-            className="mt-2"
+            className="mt-0"
             required
           />
           <InputStyled

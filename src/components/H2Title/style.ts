@@ -1,17 +1,13 @@
 import styled from 'styled-components'
 
-interface IH2StyledProps {
-  fontcolor: string
-}
-
-export const H2Styled = styled.h2<IH2StyledProps>`
+export const H2Styled = styled.h2`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0;
   margin: 0;
-  color: ${(props) => props.fontcolor};
+  color: ${({ theme }) => theme.colorText.mainText};
   font-weight: 600;
   font-size: 24pt;
   text-align: center;

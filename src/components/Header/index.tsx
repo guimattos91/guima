@@ -2,7 +2,7 @@ import { memo, useCallback, useState } from 'react'
 
 import { Col, Container, Row } from 'react-bootstrap'
 
-import { AStyled } from 'styles/GlobalStyles'
+import LightButton from 'components/LightButton'
 
 import LogoBranca from '../../assets/Logo/logo-branca.png'
 import LogoBrancaMobile from '../../assets/Logo/logo-mobile-branca.png'
@@ -16,12 +16,12 @@ import {
   ButtonStyled,
   H1Styled,
   HeaderDiv,
+  AStyled,
 } from './style'
 
 const Header: React.FC = () => {
   const [isActive, setIsActive] = useState(false)
   const [bgColorDiv, setBgColorDiv] = useState(false)
-  // const [menuActivate, setMenuActivate] = useState(false)
 
   const handleClick = useCallback(() => {
     setIsActive(!isActive)
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
   }, [isActive, bgColorDiv])
 
   return (
-    <HeaderDiv bgColor={bgColorDiv}>
+    <HeaderDiv bgcolor={bgColorDiv ? '#1d1d1d' : 'none'}>
       <Container>
         <Row className="d-flex align-items-center justify-content-between">
           <Col xs={6}>
@@ -44,19 +44,20 @@ const Header: React.FC = () => {
           </Col>
           <Col xs={6}>
             <SectionStyled>
+              <LightButton />
               <NavStyled>
-                <AStyled
+                {/* <AStyled
                   linkcolor="white"
                   linkhovercolor="#02acd9"
                   href="#clientes"
                   className="me-3"
                 >
                   Nossos Clientes
-                </AStyled>
+                </AStyled> */}
                 <AStyled
                   linkcolor="white"
                   linkhovercolor="#02acd9"
-                  href="#clientes"
+                  href="#trabalho"
                   className="me-3"
                 >
                   Nossos Trabalhos
@@ -64,13 +65,14 @@ const Header: React.FC = () => {
                 <AStyled
                   linkcolor="white"
                   linkhovercolor="#02acd9"
-                  href="#clientes"
+                  href="#contato"
                 >
                   Contato
                 </AStyled>
               </NavStyled>
             </SectionStyled>
             <SectionStyledSmall>
+              <LightButton />
               <ButtonStyled
                 className={`hamburger--squeeze ${isActive ? 'is-active' : ''}`}
                 type="button"

@@ -1,6 +1,6 @@
 import { memo } from 'react'
 
-import SectionClients from 'components/SectionClients'
+// import SectionClients from 'components/SectionClients'
 import SectionForms from 'components/SectionForms'
 import SectionMainBanner from 'components/SectionMainBanner'
 import SectionWhoWeAre from 'components/SectionWhoWeAre'
@@ -10,7 +10,7 @@ const Main: React.FC = () => {
   return (
     <main>
       <SectionMainBanner />
-      <SectionClients />
+      {/* <SectionClients /> */}
       <SectionWhoWeAre />
       <SectionWorks />
       <SectionForms />

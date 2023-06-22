@@ -31,6 +31,6 @@ export const LinkStyled = styled.a`
   font-weight: 700;
 
   &:hover {
-    color: rgb(255, 152, 0);
+    color: #02acd9;
   }
 `
