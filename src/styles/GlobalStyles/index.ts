@@ -1,10 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
-interface ILinkAProps {
-  linkcolor: string
-  linkhovercolor: string
-}
-
 export default createGlobalStyle`
     * {
         margin: 0;
@@ -29,7 +24,7 @@ export default createGlobalStyle`
     }
 `
 
-export const AStyled = styled.a<ILinkAProps>`
+export const AStyled = styled.a`
   text-decoration: none;
   font-style: normal;
   font-weight: 600;
