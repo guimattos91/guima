@@ -36,21 +36,22 @@ export const ThemeProvider: React.FC<IThemeProviderProps> = ({ children }) => {
     const head = document.querySelector('head')
     const meta = document.createElement('meta')
     meta.setAttribute('name', 'theme-color')
-    meta.setAttribute('content', theme.background.color)
+    meta.setAttribute('content', theme.name)
     head?.appendChild(meta)
 
     return () => {
       head?.removeChild(meta)
     }
-  }, [theme.background.color])
+  }, [theme.name])
 
   return (
     <ThemeContext.Provider
       value={useMemo(
         () => ({
           toggleTheme,
+          theme,
         }),
-        [toggleTheme],
+        [toggleTheme, theme],
       )}
     >
       <StyledThemeProvider theme={theme}>{children}</StyledThemeProvider>
