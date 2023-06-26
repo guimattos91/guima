@@ -60,7 +60,6 @@ export const TextareaStyled = styled.textarea`
   }
 `
 export const ButtonStyled = styled.button`
-  background: none;
   color: white;
   font-weight: 700;
   box-shadow: 0 0 0 0;
@@ -68,8 +67,7 @@ export const ButtonStyled = styled.button`
   padding: 0.5em 3em 0.5em 3em;
   outline: 0;
   background-color: #00728f;
-
   :hover {
-    background-color: #004354;
+    background-color: #1d1d1d;
   }
 `
