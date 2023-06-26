@@ -49,9 +49,8 @@ export const ThemeProvider: React.FC<IThemeProviderProps> = ({ children }) => {
       value={useMemo(
         () => ({
           toggleTheme,
-          theme,
         }),
-        [toggleTheme, theme],
+        [toggleTheme],
       )}
     >
       <StyledThemeProvider theme={theme}>{children}</StyledThemeProvider>
