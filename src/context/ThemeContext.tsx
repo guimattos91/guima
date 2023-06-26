@@ -36,13 +36,13 @@ export const ThemeProvider: React.FC<IThemeProviderProps> = ({ children }) => {
     const head = document.querySelector('head')
     const meta = document.createElement('meta')
     meta.setAttribute('name', 'theme-color')
-    meta.setAttribute('content', theme.name)
+    meta.setAttribute('content', theme.background.color)
     head?.appendChild(meta)
 
     return () => {
       head?.removeChild(meta)
     }
-  }, [theme.name])
+  }, [theme.background.color])
 
   return (
     <ThemeContext.Provider

@@ -1,15 +1,5 @@
 export const darkTheme = {
   name: 'dark',
-  color: {
-    primary: {
-      mainText: '#ffffff',
-      contrastText: '#c1d9d0',
-    },
-    secundary: {
-      main: '#736681',
-      contrastText: '#62455b',
-    },
-  },
 
   // Cores para texto
   colorText: {

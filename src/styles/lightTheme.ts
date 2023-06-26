@@ -1,17 +1,6 @@
 export const lightTheme = {
   name: 'light',
 
-  color: {
-    primary: {
-      mainText: '#1d1d1d',
-      contrastText: '#02acd9',
-    },
-    secundary: {
-      main: '#736681',
-      contrastText: '#62455b',
-    },
-  },
-
   // Cores para texto
   colorText: {
     black: '#000000',
