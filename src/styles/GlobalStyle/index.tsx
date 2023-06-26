@@ -17,10 +17,9 @@ export default createGlobalStyle`
     a{
         text-decoration: none;
         font-style: normal;
-        font-weight: 600;
         color: white;
         a:hover { color: inherit; };
-}
+    }
     p{
         font-family: 'Montserrat', sans-serif;
         margin: 0;
