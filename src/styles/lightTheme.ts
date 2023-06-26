@@ -1,4 +1,4 @@
-export const Theme = {
+export const lightTheme = {
   name: 'light',
 
   color: {

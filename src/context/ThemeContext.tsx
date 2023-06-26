@@ -12,7 +12,7 @@ import { ThemeProvider as StyledThemeProvider } from 'styled-components'
 import { isDayTime } from 'helpers'
 
 import { darkTheme } from 'styles/darkTheme'
-import { Theme } from 'styles/theme'
+import { lightTheme } from 'styles/lightTheme'
 
 interface IThemeContextProps {
   toggleTheme: () => void
@@ -27,9 +27,9 @@ export const ThemeContext = createContext<IThemeContextProps>(
 )
 
 export const ThemeProvider: React.FC<IThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState(isDayTime() ? Theme : darkTheme)
+  const [theme, setTheme] = useState(isDayTime() ? lightTheme : darkTheme)
   const toggleTheme = useCallback(() => {
-    setTheme((prev) => (prev.name === 'dark' ? Theme : darkTheme))
+    setTheme((prev) => (prev.name === 'dark' ? lightTheme : darkTheme))
   }, [])
 
   useEffect(() => {
