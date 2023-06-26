@@ -15,8 +15,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Suspense>
       <ThemeProvider>
-        <App />
         <GlobalStyles />
+        <App />
       </ThemeProvider>
     </Suspense>
   </React.StrictMode>,
