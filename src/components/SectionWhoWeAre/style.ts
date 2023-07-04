@@ -36,7 +36,7 @@ export const ColStyledImage = styled(Col)`
   justify-content: center;
   align-items: center;
   img {
-    max-height: 70%;
+    width: 100%;
   }
 `
 export const RowStyled = styled(Row)`

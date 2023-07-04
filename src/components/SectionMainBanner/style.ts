@@ -24,13 +24,17 @@ export const H2Styled = styled.h2`
 export const SectionStyled = styled.section`
   display: flex;
   width: 100%;
-  height: 60vh;
+  height: 88vh;
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2rem;
   z-index: -2;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 80vh;
+  }
 `
 export const SpanTitle = styled.span`
   color: #02acd9;
