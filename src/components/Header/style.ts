@@ -49,7 +49,7 @@ export const MenuMobile = styled.div`
   display: flex;
   justify-content: center;
   color: white;
-  background-color: #1d1d1d;
+  background-color: #041114;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -63,6 +63,7 @@ export const MenuMobile = styled.div`
 
     a {
       padding: 1rem 0;
+      color: white;
     }
   }
 `

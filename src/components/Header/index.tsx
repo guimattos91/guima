@@ -29,7 +29,7 @@ const Header: React.FC = () => {
   }, [isActive, bgColorDiv])
 
   return (
-    <HeaderDiv bgcolor={bgColorDiv ? '#1d1d1d' : 'none'}>
+    <HeaderDiv bgcolor={bgColorDiv ? '#041114' : 'none'}>
       <Container>
         <Row className="d-flex align-items-center justify-content-between">
           <Col xs={6}>
@@ -46,14 +46,14 @@ const Header: React.FC = () => {
             <SectionStyled>
               <LightButton />
               <NavStyled>
-                {/* <AStyled
+                <AStyled
                   linkcolor="white"
                   linkhovercolor="#02acd9"
-                  href="#clientes"
+                  href="#quem-somos-nos"
                   className="me-3"
                 >
-                  Nossos Clientes
-                </AStyled> */}
+                  Quem somos
+                </AStyled>
                 <AStyled
                   linkcolor="white"
                   linkhovercolor="#02acd9"
@@ -90,14 +90,14 @@ const Header: React.FC = () => {
         <MenuMobile>
           <nav>
             <a
-              href="#clientes"
+              href="#quem-somos-nos"
               className="px-3"
               onClick={() => {
                 setIsActive(false)
                 setBgColorDiv(false)
               }}
             >
-              Nossos Clientes
+              Quem Somos
             </a>
             <a
               href="#trabalho"

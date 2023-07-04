@@ -6,7 +6,7 @@ export const lightTheme = {
     black: '#000000',
     contrastText: '#fff',
     lightBlue: '#02acd9',
-    mainText: '#1d1d1d',
+    mainText: '#041114',
   },
 
   // Cores para Background

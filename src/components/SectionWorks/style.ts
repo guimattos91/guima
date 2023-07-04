@@ -5,5 +5,6 @@ export const SectionStyled = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  background-color: ${({ theme }) => theme.background.color};
 `

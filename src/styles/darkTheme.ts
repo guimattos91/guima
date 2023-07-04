@@ -4,14 +4,14 @@ export const darkTheme = {
   // Cores para texto
   colorText: {
     black: '#000000',
-    contrastText: '#1d1d1d',
+    contrastText: '#041114',
     lightBlue: '#02acd9',
     mainText: '#ffffff',
   },
 
   // Cores para Background
   background: {
-    color: '#1d1d1d',
+    color: '#041114',
     lightBlue: '#02acd9',
   },
 

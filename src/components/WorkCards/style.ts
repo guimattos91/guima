@@ -18,6 +18,7 @@ export const DivCard = styled.div`
   border-radius: 1em;
   background-color: ${({ theme }) => theme.background.color};
   height: 100%;
+  color: ${({ theme }) => theme.colorText.mainText};
 
   @media (max-width: 576px) {
     height: auto;

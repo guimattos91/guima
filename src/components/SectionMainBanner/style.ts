@@ -29,7 +29,8 @@ export const SectionStyled = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10rem;
+  padding-bottom: 2rem;
+  z-index: -2;
 `
 export const SpanTitle = styled.span`
   color: #02acd9;
@@ -41,8 +42,9 @@ export const VideoBanner = styled.video`
   position: absolute;
   top: 0;
   left: 0;
-  height: 80%;
+  height: 100%;
   object-fit: cover;
   width: 100%;
-  z-index: -5;
+  z-index: -1;
+  background-color: ${({ theme }) => theme.background.color};
 `
